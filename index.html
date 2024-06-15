@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Self-Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Self-Service Portal</h1>
+
+    <section class="form-section">
+      <h2>Leave Request</h2>
+      <form id="leaveRequestForm">
+        <input type="text" id="leaveEmployeeName" placeholder="Employee Name" required>
+        <input type="date" id="leaveStartDate" required>
+        <input type="date" id="leaveEndDate" required>
+        <button type="submit">Submit Leave Request</button>
+      </form>
+      <ul id="leaveRequestList"></ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Expense Claim</h2>
+      <form id="expenseClaimForm">
+        <input type="text" id="expenseEmployeeName" placeholder="Employee Name" required>
+        <input type="number" id="expenseAmount" placeholder="Amount" required>
+        <textarea id="expenseDescription" placeholder="Description" required></textarea>
+        <button type="submit">Submit Expense Claim</button>
+      </form>
+      <ul id="expenseClaimList"></ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Performance Feedback</h2>
+      <form id="feedbackForm">
+        <input type="text" id="feedbackEmployeeName" placeholder="Employee Name" required>
+        <textarea id="feedbackText" placeholder="Enter your feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <ul id="feedbackList"></ul>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
